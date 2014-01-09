@@ -173,7 +173,7 @@ static IMStoreManager *sharedManager = nil;
     [[SKPaymentQueue defaultQueue] finishTransaction: transaction];
 
     if (purchaseProductBlock) {
-        purchaseProductBlock(nil);
+        purchaseProductBlock(transaction.payment.productIdentifier);
         purchaseProductBlock = nil;
     }
 }
@@ -281,7 +281,7 @@ static IMStoreManager *sharedManager = nil;
 
 // Tells the model whether the user has purchaed this particular product.
 - (void)userHasPurchasedProductId:(NSString *)productId withCompletion:(IMStoreManagerBoolBlock)completion
-{
+{    
     if (productInfo == nil)
     {
     KeychainItemWrapper *keychain = [[KeychainItemWrapper alloc] initWithIdentifier:kKeychainID accessGroup:nil];

@@ -18,21 +18,12 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="II8-Fo-gyx">
-                                <rect key="frame" x="0.0" y="119" width="320" height="330"/>
+                                <rect key="frame" x="0.0" y="117" width="320" height="334"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SplitPong!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmb-Oo-6dR">
-                                <rect key="frame" x="51" y="76" width="218" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="36"/>
-                                <color key="textColor" red="0.097513686131386862" green="0.0" blue="0.20845688868613138" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.170648950729927" green="0.04359603102189781" blue="0.65673471715328469" alpha="1" colorSpace="deviceRGB"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sR-o4-368">
-                                <rect key="frame" x="108" y="516" width="104" height="32"/>
+                                <rect key="frame" x="108" y="518" width="104" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Choose Theme">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -53,7 +44,7 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8Zj-zR-x6R">
-                                <rect key="frame" x="53" y="478" width="215" height="31"/>
+                                <rect key="frame" x="53" y="480" width="215" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Beach"/>
@@ -63,7 +54,7 @@
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEc-Vl-WkC">
-                                <rect key="frame" x="53" y="477" width="215" height="30"/>
+                                <rect key="frame" x="53" y="479" width="215" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal">
@@ -74,8 +65,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vx-uV-fP6">
-                                <rect key="frame" x="124" y="269" width="72" height="30"/>
+                                <rect key="frame" x="78" y="257" width="164" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <state key="normal" title="Let's Play!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -83,25 +75,28 @@
                                     <segue destination="LVB-YS-i5n" kind="push" id="Z3M-GK-Ma7"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splitpong Logo" translatesAutoresizingMaskIntoConstraints="NO" id="xwk-P1-8kc">
+                                <rect key="frame" x="39" y="50" width="243" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hmb-Oo-6dR" firstAttribute="top" secondItem="hbn-Ec-kAS" secondAttribute="bottom" constant="76" id="9fg-LO-Tiq"/>
+                            <constraint firstItem="xwk-P1-8kc" firstAttribute="top" secondItem="YDA-7N-5DP" secondAttribute="bottom" constant="8" id="5fB-sF-ztL"/>
                             <constraint firstAttribute="centerY" secondItem="II8-Fo-gyx" secondAttribute="centerY" id="9wh-dS-wpK"/>
                             <constraint firstItem="dEc-Vl-WkC" firstAttribute="centerY" secondItem="8Zj-zR-x6R" secondAttribute="centerY" constant="-1" id="B4G-uu-CVe"/>
                             <constraint firstAttribute="trailing" secondItem="YDA-7N-5DP" secondAttribute="trailing" constant="20" id="B95-FA-wnX"/>
                             <constraint firstAttribute="trailing" secondItem="II8-Fo-gyx" secondAttribute="trailing" id="Ffw-0h-zEk"/>
-                            <constraint firstAttribute="centerX" secondItem="hmb-Oo-6dR" secondAttribute="centerX" id="H8f-Jf-FWh"/>
                             <constraint firstAttribute="centerX" secondItem="8Zj-zR-x6R" secondAttribute="centerX" id="JC8-5f-9n5"/>
                             <constraint firstAttribute="centerY" secondItem="II8-Fo-gyx" secondAttribute="centerY" id="Nnx-s7-n9G"/>
                             <constraint firstItem="dEc-Vl-WkC" firstAttribute="top" secondItem="II8-Fo-gyx" secondAttribute="bottom" constant="28" id="PCU-0c-BXJ"/>
                             <constraint firstAttribute="centerX" secondItem="dEc-Vl-WkC" secondAttribute="centerX" id="RR9-Kd-zeT"/>
                             <constraint firstAttribute="centerY" secondItem="9Vx-uV-fP6" secondAttribute="centerY" id="RUl-RJ-Q28"/>
                             <constraint firstItem="dEc-Vl-WkC" firstAttribute="height" secondItem="8Zj-zR-x6R" secondAttribute="height" id="ZXq-TT-SBV"/>
-                            <constraint firstItem="II8-Fo-gyx" firstAttribute="top" secondItem="hmb-Oo-6dR" secondAttribute="bottom" id="ZjT-jH-ulx"/>
                             <constraint firstItem="7sR-o4-368" firstAttribute="top" secondItem="8Zj-zR-x6R" secondAttribute="bottom" constant="8" id="afa-8t-74S"/>
                             <constraint firstItem="uTx-7W-lJD" firstAttribute="top" secondItem="7sR-o4-368" secondAttribute="bottom" constant="20" id="gMm-Jv-zBl"/>
                             <constraint firstAttribute="centerX" secondItem="II8-Fo-gyx" secondAttribute="centerX" id="gZC-U0-ncp"/>
+                            <constraint firstAttribute="centerX" secondItem="xwk-P1-8kc" secondAttribute="centerX" id="giA-3q-nnh"/>
                             <constraint firstAttribute="centerY" secondItem="II8-Fo-gyx" secondAttribute="centerY" id="kYc-yp-XnE"/>
                             <constraint firstItem="YDA-7N-5DP" firstAttribute="top" secondItem="hbn-Ec-kAS" secondAttribute="bottom" constant="20" id="ktl-kA-hw3"/>
                             <constraint firstItem="II8-Fo-gyx" firstAttribute="leading" secondItem="L2l-cp-sQu" secondAttribute="leading" id="lKG-YY-63d"/>
@@ -136,9 +131,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="941" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qu-K6-PDp">
-                                <rect key="frame" x="62" y="436" width="197" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splitpong Logo" translatesAutoresizingMaskIntoConstraints="NO" id="wn7-V5-NmP">
+                                <rect key="frame" x="39" y="58" width="243" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="941" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qu-K6-PDp">
+                                <rect key="frame" x="44" y="432" width="232" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Shut up and take my money!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -147,17 +147,8 @@
                                     <action selector="buyThemes:" destination="Pc8-6M-S4q" eventType="touchUpInside" id="USq-bx-Glx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="SplitPong!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZo-SX-qk1">
-                                <rect key="frame" x="90" y="69" width="140" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="23"/>
-                                <color key="textColor" red="0.097513686129999999" green="0.0" blue="0.20845688870000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.1706489507" green="0.043596031020000002" blue="0.65673471719999998" alpha="1" colorSpace="deviceRGB"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get great themes and enjoy splitpong on a whole new level!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="9gI-j6-gKz">
-                                <rect key="frame" x="20" y="105" width="280" height="229"/>
+                                <rect key="frame" x="20" y="264" width="280" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -174,7 +165,7 @@
                                 </connections>
                             </button>
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="252" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dkG-W1-5lF">
-                                <rect key="frame" x="20" y="342" width="280" height="86"/>
+                                <rect key="frame" x="20" y="338" width="280" height="86"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -199,7 +190,7 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13v-XE-ot4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13v-XE-ot4">
                                 <rect key="frame" x="20" y="20" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -212,8 +203,8 @@
                                     <action selector="cancel:" destination="Pc8-6M-S4q" eventType="touchUpInside" id="R0G-6J-sG4"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sbo-FU-3vh">
-                                <rect key="frame" x="234" y="0.0" width="320" height="568"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sbo-FU-3vh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="R0S-gN-2f6">
@@ -230,20 +221,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="eZo-SX-qk1" firstAttribute="top" secondItem="WWA-We-3w9" secondAttribute="bottom" constant="69" id="982-6O-VLL"/>
+                            <constraint firstItem="13v-XE-ot4" firstAttribute="top" secondItem="WWA-We-3w9" secondAttribute="bottom" constant="20" id="0h6-T1-PJY"/>
                             <constraint firstItem="aPo-6N-jwo" firstAttribute="top" secondItem="2qu-K6-PDp" secondAttribute="bottom" constant="8" id="99L-B2-8I9"/>
-                            <constraint firstItem="9gI-j6-gKz" firstAttribute="top" secondItem="eZo-SX-qk1" secondAttribute="bottom" priority="999" constant="8" id="Bj6-Ak-AOp"/>
                             <constraint firstAttribute="trailing" secondItem="9gI-j6-gKz" secondAttribute="trailing" constant="20" id="Byb-c7-ssV"/>
                             <constraint firstAttribute="trailing" secondItem="dkG-W1-5lF" secondAttribute="trailing" constant="20" id="Df6-BD-CpI"/>
-                            <constraint firstAttribute="centerX" secondItem="eZo-SX-qk1" secondAttribute="centerX" id="FdA-TJ-4bv"/>
+                            <constraint firstAttribute="centerX" secondItem="wn7-V5-NmP" secondAttribute="centerX" id="Fw4-iR-OWH"/>
                             <constraint firstItem="2qu-K6-PDp" firstAttribute="top" secondItem="dkG-W1-5lF" secondAttribute="bottom" constant="8" id="JFH-7F-lam"/>
                             <constraint firstAttribute="bottom" secondItem="Sbo-FU-3vh" secondAttribute="bottom" id="Jws-gQ-hUB"/>
-                            <constraint firstItem="dkG-W1-5lF" firstAttribute="top" secondItem="9gI-j6-gKz" secondAttribute="bottom" constant="8" id="M5a-kz-Y2a"/>
+                            <constraint firstAttribute="centerY" secondItem="9gI-j6-gKz" secondAttribute="centerY" id="LAY-AK-p8D"/>
                             <constraint firstAttribute="trailing" secondItem="Sbo-FU-3vh" secondAttribute="trailing" id="MsZ-bM-RVX"/>
                             <constraint firstAttribute="centerX" secondItem="2qu-K6-PDp" secondAttribute="centerX" id="OcL-Vb-alQ"/>
                             <constraint firstItem="Sbo-FU-3vh" firstAttribute="leading" secondItem="iR1-fb-9cX" secondAttribute="leading" id="YYp-ON-GTc"/>
                             <constraint firstItem="9gI-j6-gKz" firstAttribute="leading" secondItem="iR1-fb-9cX" secondAttribute="leading" constant="20" id="jMO-EE-0dG"/>
                             <constraint firstItem="dkG-W1-5lF" firstAttribute="leading" secondItem="iR1-fb-9cX" secondAttribute="leading" constant="20" id="lfz-SE-kos"/>
+                            <constraint firstItem="wn7-V5-NmP" firstAttribute="top" secondItem="13v-XE-ot4" secondAttribute="bottom" constant="8" id="nHn-wC-GsF"/>
+                            <constraint firstItem="13v-XE-ot4" firstAttribute="leading" secondItem="iR1-fb-9cX" secondAttribute="leading" constant="20" id="q5B-Dl-iFz"/>
                             <constraint firstAttribute="centerX" secondItem="aPo-6N-jwo" secondAttribute="centerX" id="scP-fK-ijz"/>
                             <constraint firstItem="2jh-T4-TMt" firstAttribute="top" secondItem="aPo-6N-jwo" secondAttribute="bottom" constant="20" id="xMQ-18-Xei"/>
                             <constraint firstItem="Sbo-FU-3vh" firstAttribute="top" secondItem="WWA-We-3w9" secondAttribute="bottom" id="zb2-jB-VyC"/>
@@ -445,6 +437,9 @@
             <point key="canvasLocation" x="-13" y="291"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Splitpong Logo" width="243" height="48"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <nil key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
