@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>80E422DF-E3DB-433C-9002-6247E3AD87A5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SplitPong</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ABEAAD3F-4034-4476-A0E5-898A6EE17149</key>
+		<string>ssh://bigmac.local/git/splitpong.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SplitPong.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ABEAAD3F-4034-4476-A0E5-898A6EE17149</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://bigmac.local/git/splitpong.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ABEAAD3F-4034-4476-A0E5-898A6EE17149</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ABEAAD3F-4034-4476-A0E5-898A6EE17149</string>
+			<key>IDESourceControlWCCName</key>
+			<string>splitpong</string>
+		</dict>
+	</array>
+</dict>
+</plist>
