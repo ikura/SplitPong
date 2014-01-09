@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>80E422DF-E3DB-433C-9002-6247E3AD87A5</string>
+	<string>B2989C19-FC77-4D98-B0D1-6A32FEB3CB81</string>
 	<key>IDESourceControlProjectName</key>
 	<string>SplitPong</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>ABEAAD3F-4034-4476-A0E5-898A6EE17149</key>
-		<string>ssh://bigmac.local/git/splitpong.git</string>
+		<key>EAC45695-672D-4CB4-B72F-B2927CE8C3D8</key>
+		<string>https://github.com/ikura/SplitPong.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>SplitPong.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>ABEAAD3F-4034-4476-A0E5-898A6EE17149</key>
+		<key>EAC45695-672D-4CB4-B72F-B2927CE8C3D8</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://bigmac.local/git/splitpong.git</string>
+	<string>https://github.com/ikura/SplitPong.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>ABEAAD3F-4034-4476-A0E5-898A6EE17149</string>
+	<string>EAC45695-672D-4CB4-B72F-B2927CE8C3D8</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>ABEAAD3F-4034-4476-A0E5-898A6EE17149</string>
+			<string>EAC45695-672D-4CB4-B72F-B2927CE8C3D8</string>
 			<key>IDESourceControlWCCName</key>
-			<string>splitpong</string>
+			<string>SplitPong</string>
 		</dict>
 	</array>
 </dict>
