@@ -146,9 +146,11 @@ static const UInt8 kKeychainItemIdentifier[]    = "com.ikuramedia.SplitPongKeych
         //  and put it into tmpDictionary:
         NSMutableDictionary *tmpDictionary =
         [self dictionaryToSecItemFormat:keychainData];
+        CFDictionaryRef tmpDictionaryRef = (__bridge CFDictionaryRef)tmpDictionary;
         // Delete the keychain item in preparation for resetting the values:
-        NSAssert(SecItemDelete((__bridge CFDictionaryRef)tmpDictionary) == noErr,
-                 @"Problem deleting current keychain item." );
+        BOOL success = SecItemDelete(tmpDictionaryRef) == noErr;
+        NSAssert(success, @"Problem deleting current keychain item." );
+        if (success == NO) NSLog(@"Problem deleting current keychain item.");
     }
 
     // Default generic data for Keychain Item:
