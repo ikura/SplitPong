@@ -77,7 +77,7 @@
 		D487E18A17FA7F2700EB7375 /* SPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPViewController.m; sourceTree = "<group>"; };
 		D487E18C17FA7F2700EB7375 /* SPPongScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPPongScene.h; sourceTree = "<group>"; };
 		D487E18D17FA7F2700EB7375 /* SPPongScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPPongScene.m; sourceTree = "<group>"; };
-		D487E19117FA7F2700EB7375 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D487E19117FA7F2700EB7375 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SplitPong/Images.xcassets; sourceTree = "<group>"; };
 		D487E19717FA7F2800EB7375 /* SplitPongTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplitPongTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D487E19817FA7F2800EB7375 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D487E1A017FA7F2800EB7375 /* SplitPongTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SplitPongTests-Info.plist"; sourceTree = "<group>"; };
@@ -164,7 +164,10 @@
 		D487E16617FA7F2700EB7375 = {
 			isa = PBXGroup;
 			children = (
+				D487E19117FA7F2700EB7375 /* Images.xcassets */,
+				D487E18617FA7F2700EB7375 /* Main.storyboard */,
 				D4BC6C26187E47EF00DC17DB /* Extras */,
+				D49F9FD51822624200EA7913 /* Theme Resources */,
 				D4B925BD185F30C900275DCF /* Constants.h */,
 				D487E17117FA7F2700EB7375 /* Frameworks */,
 				D4C2CF3D1824FBC500C3CAEB /* 3rd Party Code */,
@@ -205,7 +208,8 @@
 			children = (
 				D487E18317FA7F2700EB7375 /* SPAppDelegate.h */,
 				D487E18417FA7F2700EB7375 /* SPAppDelegate.m */,
-				D49F9FD51822624200EA7913 /* UI & Themes */,
+				D4A236ED181E3EE6006BEC95 /* SPThemeManager.h */,
+				D4A236EE181E3EE6006BEC95 /* SPThemeManager.m */,
 				D49F9FD61822625500EA7913 /* View Controllers */,
 				D49F9FD81822626E00EA7913 /* Model Details */,
 				D49F9FD71822626400EA7913 /* SpriteKit Scenes */,
@@ -243,7 +247,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D49F9FD51822624200EA7913 /* UI & Themes */ = {
+		D49F9FD51822624200EA7913 /* Theme Resources */ = {
 			isa = PBXGroup;
 			children = (
 				D4C3A119187AA8840014C2D3 /* dark.m4a */,
@@ -259,12 +263,9 @@
 				D49F9FDB182271D400EA7913 /* paddle2Hit.wav */,
 				D49F9FDC182271D400EA7913 /* bgm.mp3 */,
 				D49F9FDD182271D400EA7913 /* win.wav */,
-				D487E19117FA7F2700EB7375 /* Images.xcassets */,
-				D487E18617FA7F2700EB7375 /* Main.storyboard */,
-				D4A236ED181E3EE6006BEC95 /* SPThemeManager.h */,
-				D4A236EE181E3EE6006BEC95 /* SPThemeManager.m */,
 			);
-			name = "UI & Themes";
+			name = "Theme Resources";
+			path = SplitPong;
 			sourceTree = "<group>";
 		};
 		D49F9FD61822625500EA7913 /* View Controllers */ = {
@@ -502,6 +503,7 @@
 				D487E18717FA7F2700EB7375 /* Base */,
 			);
 			name = Main.storyboard;
+			path = SplitPong;
 			sourceTree = "<group>";
 		};
 		D487E1A117FA7F2800EB7375 /* InfoPlist.strings */ = {
