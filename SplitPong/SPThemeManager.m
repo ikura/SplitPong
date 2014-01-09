@@ -189,7 +189,9 @@ CGRect centeredRect(CGRect rect)
 - (NSString *)pathForBackgroundMusic
 {
     if ([theme isEqualToString:@"Beach"]) return [[NSBundle mainBundle] pathForResource:@"beach" ofType:@"caf"];
-    if ([theme isEqualToString:@"Vector"]) return [[NSBundle mainBundle] pathForResource:@"dark" ofType:@"m4a"];
+    if ([theme isEqualToString:@"Vector"]) return [[NSBundle mainBundle] pathForResource:@"electric" ofType:@"m4a"];
+    if ([theme isEqualToString:@"Ice"]) return [[NSBundle mainBundle] pathForResource:@"dark" ofType:@"m4a"];
+    if ([theme isEqualToString:@"Sketch"]) return [[NSBundle mainBundle] pathForResource:@"twangy" ofType:@"m4a"];
 
     return nil;
 }
