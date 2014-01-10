@@ -37,7 +37,6 @@
 		D4C3A11D187AA8840014C2D3 /* electric.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4C3A11A187AA8840014C2D3 /* electric.m4a */; };
 		D4C3A11E187AA8840014C2D3 /* twangy.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4C3A11B187AA8840014C2D3 /* twangy.m4a */; };
 		D4DE0808182B86B000DAAD2F /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DE0804182B86B000DAAD2F /* KeychainItemWrapper.m */; };
-		D4DE0809182B86B000DAAD2F /* IMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DE0806182B86B000DAAD2F /* IMKeychain.m */; };
 		D4DE080B182B888600DAAD2F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DE080A182B888600DAAD2F /* Security.framework */; };
 		D4DE080E182B8A3900DAAD2F /* SPShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DE080D182B8A3900DAAD2F /* SPShopViewController.m */; };
 		D4ECCBA9182B9E0B00CD0BC1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ECCBA8182B9E0B00CD0BC1 /* StoreKit.framework */; };
@@ -111,8 +110,6 @@
 		D4DE0802182B86B000DAAD2F /* IMStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMStoreManager.m; sourceTree = "<group>"; };
 		D4DE0803182B86B000DAAD2F /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
 		D4DE0804182B86B000DAAD2F /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
-		D4DE0805182B86B000DAAD2F /* IMKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMKeychain.h; sourceTree = "<group>"; };
-		D4DE0806182B86B000DAAD2F /* IMKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMKeychain.m; sourceTree = "<group>"; };
 		D4DE080A182B888600DAAD2F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D4DE080C182B8A3900DAAD2F /* SPShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPShopViewController.h; sourceTree = "<group>"; };
 		D4DE080D182B8A3900DAAD2F /* SPShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPShopViewController.m; sourceTree = "<group>"; };
@@ -317,8 +314,6 @@
 				D4DE0802182B86B000DAAD2F /* IMStoreManager.m */,
 				D4DE0803182B86B000DAAD2F /* KeychainItemWrapper.h */,
 				D4DE0804182B86B000DAAD2F /* KeychainItemWrapper.m */,
-				D4DE0805182B86B000DAAD2F /* IMKeychain.h */,
-				D4DE0806182B86B000DAAD2F /* IMKeychain.m */,
 				D4C2CF3A1824FBBA00C3CAEB /* UIAlertView+IMBlocks.h */,
 				D4C2CF3B1824FBBA00C3CAEB /* UIAlertView+IMBlocks.m */,
 			);
@@ -459,7 +454,6 @@
 				D4B925BC185F2FC700275DCF /* UIAlertView+IMBlocks.m in Sources */,
 				D4A236F2181E44F2006BEC95 /* SPMainMenuViewController.m in Sources */,
 				D487E18117FA7F2700EB7375 /* main.m in Sources */,
-				D4DE0809182B86B000DAAD2F /* IMKeychain.m in Sources */,
 				D487E18E17FA7F2700EB7375 /* SPPongScene.m in Sources */,
 				D4AAF27D17FC1D5D0097C271 /* SPGameParameters.m in Sources */,
 				D4DE080E182B8A3900DAAD2F /* SPShopViewController.m in Sources */,
