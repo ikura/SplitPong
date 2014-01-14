@@ -63,12 +63,6 @@
 #if DEBUG
     [SFManager setDebugMode:YES];
     
-    // Debug mode includes Shake-to-variation
-    // To apply the selected variation, we re-run finshedLoading
-    SFManager.currentManager.shakeToVariationDidChangeVariationBlock = ^{
-        [kGameParams finishedLoading];
-    };
-    
     [SFManager setIdentifyCohortBlock:^(NSDictionary *cohortIdentifier) {
         kGameParams[kCohortIdKey] = cohortIdentifier;
     }];
@@ -81,6 +75,14 @@
                         completionBlock:^(BOOL success) {
                             [kGameParams finishedLoading];
                         }];
+    
+#if DEBUG
+    // Debug mode includes Shake-to-variation
+    // To apply the selected variation, we re-run finshedLoading
+    SFManager.currentManager.shakeToVariationDidChangeVariationBlock = ^{
+        [kGameParams finishedLoading];
+    };
+#endif
     
     [self becomeFirstResponder];
 
