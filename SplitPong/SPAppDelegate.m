@@ -59,11 +59,23 @@
 {
     // Override point for customization after application launch.
 
+    // For Release we don't use Debug Mode, and suppress the info viewController, so don't need the cohortId
+#if DEBUG
     [SFManager setDebugMode:YES];
+    
+    // Debug mode includes Shake-to-variation
+    // To apply the selected variation, we re-run finshedLoading
+    SFManager.currentManager.shakeToVariationDidChangeVariationBlock = ^{
+        [kGameParams finishedLoading];
+    };
+    
     [SFManager setIdentifyCohortBlock:^(NSDictionary *cohortIdentifier) {
         kGameParams[kCohortIdKey] = cohortIdentifier;
     }];
+#endif
     
+    // Initialise the manager in Async mode, and call finishedLoading on gameParameters singleton
+    // once we have data available.
     [SFManager managerWithApplicationId:kSplitforceAppId
                          applicationKey:kSplitforceAppKey
                         completionBlock:^(BOOL success) {
@@ -71,10 +83,6 @@
                         }];
     
     [self becomeFirstResponder];
-
-    SFManager.currentManager.shakeToVariationDidChangeVariationBlock = ^{
-        [kGameParams finishedLoading];
-    };
 
     return YES;
 }

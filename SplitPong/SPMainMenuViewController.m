@@ -55,6 +55,7 @@
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *gameButtons;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *themeChooser;
 @property (weak, nonatomic) IBOutlet UIButton *showShopButton;
+@property (strong, nonatomic) IBOutlet UIButton *infoButton;
 
 @end
 
@@ -73,6 +74,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+#if DEBUG
+    self.infoButton.hidden = NO;
+#else
+    self.infoButton.hidden = YES;
+#endif
+    
     for (UIButton *gameButton in self.gameButtons)
     {
         gameButton.enabled = NO;
