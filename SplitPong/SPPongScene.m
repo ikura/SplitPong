@@ -154,7 +154,7 @@ static NSMutableDictionary *avPlayers;
         [SPThemeManager.sharedManager applyThemeToPaddle:aiPaddle withSize:paddleRect.size];
         [SPThemeManager.sharedManager applyThemeToPaddle:usersPaddle withSize:paddleRect.size];
         [SPThemeManager.sharedManager applyThemeToBackground:self];
-        [self loopSoundAt:[[SPThemeManager sharedManager] pathForBackgroundMusic]];
+        if ([self playBGM]) [self loopSoundAt:[[SPThemeManager sharedManager] pathForBackgroundMusic]];
 
         // Nice bloom effect for our nodes
         SKEffectNode *ballBloomEffect = [SKEffectNode node];
@@ -342,6 +342,7 @@ static NSMutableDictionary *avPlayers;
 
 
 #pragma mark - Sound
+
 - (void)playSoundAt:(NSString *)path
 {
     if (path == nil) return;
@@ -376,6 +377,35 @@ static NSMutableDictionary *avPlayers;
 {
     for (AVAudioPlayer *player in avPlayers.allValues) [player stop];
     [avPlayers removeAllObjects];
+}
+
+- (void)setBGMOn:(BOOL)on
+{
+    NSString *bgmPath = [[SPThemeManager sharedManager] pathForBackgroundMusic];
+    
+    [avPlayers[bgmPath] stop];
+    [avPlayers removeObjectForKey:bgmPath];
+    
+    if (on)
+    {
+        [self loopSoundAt:bgmPath];
+    }
+    
+    [self updateBGMPreference:on];
+}
+
+- (void)updateBGMPreference:(BOOL)on
+{
+    [[NSUserDefaults standardUserDefaults] setBool:on forKey:@"com.splitpong.bgm"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (BOOL)playBGM
+{
+    NSNumber *on = [[NSUserDefaults standardUserDefaults] objectForKey:@"com.splitpong.bgm"];
+    if (on == nil) return YES; // Defaults to On
+    
+    return on.boolValue;
 }
 
 + (void)prepareSounds

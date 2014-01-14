@@ -72,7 +72,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splitpong Logo" translatesAutoresizingMaskIntoConstraints="NO" id="xwk-P1-8kc">
-                                <rect key="frame" x="40" y="50" width="240" height="48"/>
+                                <rect key="frame" x="40" y="50" width="240" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
@@ -127,7 +127,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splitpong Logo" translatesAutoresizingMaskIntoConstraints="NO" id="wn7-V5-NmP">
-                                <rect key="frame" x="40" y="58" width="240" height="48"/>
+                                <rect key="frame" x="40" y="58" width="240" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="941" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qu-K6-PDp">
@@ -291,12 +291,31 @@
                                     <action selector="pause:" destination="LVB-YS-i5n" eventType="touchUpInside" id="hGQ-gz-9xN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIU-Tv-ZUq">
+                                <rect key="frame" x="268" y="516" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="9lz-1Z-vE1"/>
+                                    <constraint firstAttribute="width" constant="52" id="iR9-28-Wmo"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="7" minY="10" maxX="15" maxY="17"/>
+                                <state key="normal" image="264-sound-on">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="263-sound-off"/>
+                                <state key="highlighted" image="263-sound-off"/>
+                                <connections>
+                                    <action selector="muteUnmute:" destination="LVB-YS-i5n" eventType="touchUpInside" id="kvq-2T-kqd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="qTQ-TC-5aB" firstAttribute="top" secondItem="vAv-9b-3pZ" secondAttribute="bottom" constant="20" symbolic="YES" id="30e-Cg-BcT"/>
                             <constraint firstItem="bNc-3z-GoL" firstAttribute="top" secondItem="vAv-9b-3pZ" secondAttribute="bottom" constant="20" symbolic="YES" id="6ww-oe-eOR"/>
+                            <constraint firstAttribute="trailing" secondItem="dIU-Tv-ZUq" secondAttribute="trailing" id="8Uv-pr-KpF"/>
                             <constraint firstItem="hF5-5f-5eR" firstAttribute="top" secondItem="vAv-9b-3pZ" secondAttribute="bottom" constant="20" symbolic="YES" id="I0D-OP-FD4"/>
+                            <constraint firstItem="EG2-rD-9PK" firstAttribute="top" secondItem="dIU-Tv-ZUq" secondAttribute="bottom" id="Wa0-QK-eg0"/>
                             <constraint firstAttribute="centerX" secondItem="bNc-3z-GoL" secondAttribute="centerX" id="kAH-uF-z3s"/>
                             <constraint firstItem="hF5-5f-5eR" firstAttribute="leading" secondItem="bdc-N1-crn" secondAttribute="leading" constant="20" symbolic="YES" id="r9M-88-xKL"/>
                             <constraint firstAttribute="trailing" secondItem="qTQ-TC-5aB" secondAttribute="trailing" constant="20" symbolic="YES" id="uZD-lq-rA0"/>
@@ -306,6 +325,9 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="sceneClass" value="SPPongScene"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="muteButton" destination="dIU-Tv-ZUq" id="o6C-Z5-r0j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
             </objects>
@@ -383,7 +405,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HoM-xo-uLO" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="992" y="304"/>
+            <point key="canvasLocation" x="1509" y="1032"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YRd-kK-Boy">
@@ -405,7 +427,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Splitpong Logo" width="243" height="48"/>
+        <image name="263-sound-off" width="13" height="19"/>
+        <image name="264-sound-on" width="30" height="25"/>
+        <image name="Splitpong Logo" width="530" height="95"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <nil key="statusBar"/>

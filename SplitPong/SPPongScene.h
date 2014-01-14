@@ -55,6 +55,8 @@
 }
 
 + (void)prepareSounds;
+- (void)setBGMOn:(BOOL)on;
+- (BOOL)playBGM;
 
 @property (nonatomic, copy) void(^gameOverBlock)(void);
 

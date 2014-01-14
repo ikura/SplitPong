@@ -48,7 +48,10 @@
 #import "SPViewController.h"
 #import "SPPongScene.h"
 
-@implementation SPViewController
+@implementation SPViewController {
+    SPPongScene * scene;
+    IBOutlet UIButton *muteButton;
+}
 
 - (void)viewDidLoad
 {
@@ -60,12 +63,14 @@
     skView.showsNodeCount = NO;
     
     // Create and configure the scene.
-    SPPongScene * scene = [NSClassFromString(self.sceneClass) sceneWithSize:skView.bounds.size];
+    scene = [NSClassFromString(self.sceneClass) sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     __weak UIViewController *weakSelf = self;
     scene.gameOverBlock = ^{
         [weakSelf.navigationController popViewControllerAnimated:YES];
     };
+    
+    muteButton.selected = ![scene playBGM];
     
     // Present the scene.
     [skView presentScene:scene];
@@ -87,6 +92,14 @@
 - (BOOL)shouldAutorotate
 {
     return YES;
+}
+
+- (IBAction)muteUnmute:(UIButton *)sender
+{
+    sender.selected = !sender.selected;
+    BOOL soundShouldBeOn = !sender.selected;
+    
+    [scene setBGMOn:soundShouldBeOn];
 }
 
 - (NSUInteger)supportedInterfaceOrientations
